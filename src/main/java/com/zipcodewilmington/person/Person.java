@@ -18,11 +18,7 @@ public class Person {
 
 
     public Person() {
-        this.hairLength = hairLength;
-//        this.ethnicity = ethnicity;
-//        this.height = height;
-//        this.glasses = glasses;
-//        this.gender = gender;
+        this("", Integer.MAX_VALUE);
     }
 
     public void setHairLength(String heightLength){
