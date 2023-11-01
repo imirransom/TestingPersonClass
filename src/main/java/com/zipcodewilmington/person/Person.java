@@ -22,16 +22,28 @@ public class Person {
     public void PersonFeatures(String hairLength, String ethnicity, int height, boolean glasses, String gender){
         this.hairLength = hairLength;
         this.ethnicity = ethnicity;
+        //in centimeters
         this.height = height;
         this.glasses = glasses;
         this.gender = gender;
 
     }
-    public int getHeight(int height){
-        return height;
+
+    public String getGender() {return gender;}
+
+    public void setGender() {this.gender = gender;}
+
+    public boolean getGlasses() {return glasses;}
+
+    public void setGlasses(boolean glasses){this.glasses = glasses;}
+
+    public int getHeight() {return height;}
+
+    public void setHeight(int height){
+        this.height = height;
     }
 
-    public String getEthnicity(String ethnicity){
+    public String getEthnicity(){
         return ethnicity;
     }
 
@@ -39,7 +51,7 @@ public class Person {
         this.ethnicity = ethnicity;
     }
 
-    public String getHairLength(String hairLength){
+    public String getHairLength(){
         return hairLength;
     }
 

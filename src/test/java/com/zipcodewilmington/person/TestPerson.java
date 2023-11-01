@@ -95,15 +95,7 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
-    @Test
-    public void testGetHairLength(){
-        Person person = new Person();
-        String expected = "short";
 
-        String actual = person.getHairLength(expected);
-        Assert.assertEquals(expected, actual);
-
-    }
     @Test
     public void testSetHairLength(){
         Person person = new Person();
@@ -111,17 +103,9 @@ public class TestPerson {
 
         person.setHairLength(expected);
 
-        String actual = person.getHairLength(expected);
+        String actual = person.getHairLength();
         Assert.assertEquals(expected, actual);
 
-    }
-    @Test
-    public void testGetEthnicity(){
-        Person person = new Person();
-        String expected = "African American";
-
-        String actual = person.getEthnicity(expected);
-        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -131,17 +115,43 @@ public class TestPerson {
 
         person.setEthnicity(expected);
 
-        String actual = person.getEthnicity(expected);
+        String actual = person.getEthnicity();
         Assert.assertEquals(expected, actual);
     }
+
+
+
 
     @Test
-    public void testGetHeight() {
+    public void testSetHeight() {
         Person person = new Person();
-        int expected = 168;
+        int expected = 179;
 
-        int actual = person.getHeight(expected);
+        person.setHeight(expected);
+
+        int actual = person.getHeight();
+        Assert.assertEquals(expected, actual);
+    }
+     @Test
+    public void testSetGlasses() {
+        Person person = new Person();
+        boolean expected = false;
+
+        person.setGlasses(expected);
+
+        boolean actual = person.getGlasses();
+        Assert.assertEquals(expected, actual);
+     }
+    @Test
+    public void testSetGender() {
+        Person person = new Person();
+        String expected = "male";
+
+        person.setGender(expected);
+
+        String actual = person.getGender();
         Assert.assertEquals(expected, actual);
 
     }
+
 }
