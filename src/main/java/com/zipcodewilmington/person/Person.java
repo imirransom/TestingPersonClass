@@ -11,25 +11,31 @@ public class Person {
     }
 
     public Person(int age) {
+        this.age = age;
     }
 
     public Person(String name) {
+        this.name = name;
     }
 
     public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public void setName(String name) {
+        name = "Imir";
     }
 
     public void setAge(int age) {
+        age = 25;
     }
 
     public String getName() {
-        return null;
+        return name;
     }
 
     public Integer getAge() {
-        return null;
+        return age;
     }
 }
