@@ -95,4 +95,24 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testGetHairLength(){
+        Person person = new Person();
+        String expected = "short";
+
+        String actual = person.getHairLength(expected);
+        Assert.assertEquals(expected, actual);
+
+    }
+    @Test
+    public void testSetHairLength(){
+        Person person = new Person();
+        String expected = "long";
+
+        person.setHairLength(expected);
+
+        String actual = person.getHairLength();
+        Assert.assertEquals(expected, actual);
+
+    }
 }

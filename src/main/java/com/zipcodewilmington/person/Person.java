@@ -11,21 +11,53 @@ public class Person {
     private String ethnicity;
     private int height;
     private boolean glasses;
-
     private String gender;
+
+
+
+
+
+
+
+    public void PersonFeatures(String hairLength, String ethnicity, int height, boolean glasses, String gender){
+        this.hairLength = hairLength;
+        this.ethnicity = ethnicity;
+        this.height = height;
+        this.glasses = glasses;
+        this.gender = gender;
+
+    }
+
+    public String getHairLength(String hairLength){
+        return hairLength;
+    }
+    public void setHairLength(String heightLength){
+        this.hairLength = heightLength;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
     public Person() {
         this("", Integer.MAX_VALUE);
-    }
-
-    public void setHairLength(String heightLength){
-        this.hairLength = heightLength;
-    }
-    public String getHairLength(String hairLength){
-        return hairLength;
     }
 
     public Person(int age) {
