@@ -7,7 +7,29 @@ public class Person {
     private String name;
     private int age;
 
+    private String hairLength;
+    private String ethnicity;
+    private int height;
+    private boolean glasses;
+
+    private String gender;
+
+
+
+
     public Person() {
+        this.hairLength = hairLength;
+//        this.ethnicity = ethnicity;
+//        this.height = height;
+//        this.glasses = glasses;
+//        this.gender = gender;
+    }
+
+    public void setHairLength(String heightLength){
+        this.hairLength = heightLength;
+    }
+    public String getHairLength(String hairLength){
+        return hairLength;
     }
 
     public Person(int age) {
@@ -24,11 +46,11 @@ public class Person {
     }
 
     public void setName(String name) {
-        name = "Imir";
+        this.name = name;
     }
 
     public void setAge(int age) {
-        age = 25;
+        this.age = age;
     }
 
     public String getName() {
