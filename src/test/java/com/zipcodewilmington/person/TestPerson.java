@@ -111,7 +111,36 @@ public class TestPerson {
 
         person.setHairLength(expected);
 
-        String actual = person.getHairLength();
+        String actual = person.getHairLength(expected);
+        Assert.assertEquals(expected, actual);
+
+    }
+    @Test
+    public void testGetEthnicity(){
+        Person person = new Person();
+        String expected = "African American";
+
+        String actual = person.getEthnicity(expected);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetEthnicity(){
+        Person person = new Person();
+        String expected = "African American";
+
+        person.setEthnicity(expected);
+
+        String actual = person.getEthnicity(expected);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetHeight() {
+        Person person = new Person();
+        int expected = 168;
+
+        int actual = person.getHeight(expected);
         Assert.assertEquals(expected, actual);
 
     }

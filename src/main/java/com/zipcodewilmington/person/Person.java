@@ -27,10 +27,22 @@ public class Person {
         this.gender = gender;
 
     }
+    public int getHeight(int height){
+        return height;
+    }
+
+    public String getEthnicity(String ethnicity){
+        return ethnicity;
+    }
+
+    public void setEthnicity(String ethnicity){
+        this.ethnicity = ethnicity;
+    }
 
     public String getHairLength(String hairLength){
         return hairLength;
     }
+
     public void setHairLength(String heightLength){
         this.hairLength = heightLength;
     }
