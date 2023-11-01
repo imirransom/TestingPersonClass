@@ -97,6 +97,16 @@ public class TestPerson {
     }
 
     @Test
+    public void testConstructorWithGlasses() {
+        boolean expected = false;
+
+        Person person = new Person(expected);
+
+       boolean actual = person.getGlasses();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
     public void testSetHairLength(){
         Person person = new Person();
         String expected = "long";

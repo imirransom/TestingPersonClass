@@ -18,20 +18,16 @@ public class Person {
 
 
 
-
-    public void PersonFeatures(String hairLength, String ethnicity, int height, boolean glasses, String gender){
-        this.hairLength = hairLength;
-        this.ethnicity = ethnicity;
+//glasses constructor
+    public Person(boolean glasses){
         //in centimeters
-        this.height = height;
         this.glasses = glasses;
-        this.gender = gender;
 
     }
 
     public String getGender() {return gender;}
 
-    public void setGender() {this.gender = gender;}
+    public void setGender(String gender) {this.gender = gender;}
 
     public boolean getGlasses() {return glasses;}
 
